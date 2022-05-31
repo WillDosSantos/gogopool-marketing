@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+//Navigation
+nav {
+  background-color: #48beff;
+  border-bottom: 1px solid #fff;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        a {
+          color: #fff;
+          font-weight: bold;
+          padding: 1em;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: 4em 0em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #0a98ff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section--yellow {
+  background: linear-gradient(180deg, #ffc700 0%, #ffc700 100%);
+  box-shadow: 0px 15px 0px #ff9900;
+
+  .col-2 {
+    h2 {
+      color: #fff;
+      border-bottom: 3px solid #000000;
+      padding: 0 0 0.5em 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.section--blue {
+  background-color: #48beff;
+  h2 {
+    color: #fff;
+  }
+  color: #fff;
+}
+
+.section--blue__bottom-angle {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  padding-bottom: 400px;
+}
+
+.hero-banner {
+  background-color: #48beff;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  .logo {
+    padding-top: 4em;
+  }
+  .content {
+    padding-bottom: 5em;
+  }
+}
+
+.button-group {
+  margin-top: 3em;
+  button:first-child {
+    margin-right: 10px;
+  }
+}
+
+.btn {
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0px 7px 0px #000000;
+  border-radius: 15px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1em 3em;
+}
+
+.btn--primary {
+  background-color: #ffdd08;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  .col {
+    flex: 1;
+    width: 48%;
+    position: relative;
+    padding: 0 3em;
+  }
+}
+
+.hero-mountain {
+  position: absolute;
+  left: -400px;
+  bottom: -240px;
+}
+
+.section--angle-blue {
+  background-color: #48beff;
+  color: #fff;
+  overflow: hidden;
+  clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0 100%);
+  h2 {
+    color: #fff;
+  }
+}
+
+.cloud {
+  position: absolute;
+}
+
+.cloud-1 {
+  right: -300px;
+}
+.cloud-2 {
+  left: 100px;
+}
+.mtn-container {
+  position: relative;
+  .flag-animation {
+    position: absolute;
+    top: -260px;
+    width: 100%;
+    max-width: 40px;
+    z-index: 300;
+    left: 95px;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  .grid-col {
+    align-self: center;
+  }
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
