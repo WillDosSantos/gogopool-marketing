@@ -88,7 +88,18 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section style={{ padding: "0", marginBottom: "-300px" }}>
+
+        <section
+          style={{
+            padding: "0",
+            marginBottom: "-300px",
+            marginTop: "-200px",
+            zIndex: "3",
+            overflow: "visible",
+            position: "relative",
+          }}
+        >
+        
           <div className="content">
             <div className="columns">
               <div className="col col-1">
@@ -110,16 +121,24 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Parallax speed={10} style={{ position: 'relative', zIndex: '100' }}>
+        <img className="falling-coins" src="images/coins-batch.png" alt="illustration of coins" />
+        </Parallax>
         <section className="section--angle-blue">
           <div className="content">
             <div className="columns">
               <div className="col col-1">
-                <Parallax speed={10}>
-                  <img
-                    src="images/houses.svg"
-                    alt="illustration of coins coming out of bottom of floating mountain being carried away by hot air balloons"
-                  />
-                </Parallax>
+                <img
+                  src="images/houses.svg"
+                  style={{
+                    zIndex: "400",
+                    maxWidth: "600px",
+                    position: "relative",
+                    display: "block",
+                    top: "150px",
+                  }}
+                  alt="illustration of coins coming out of bottom of floating mountain being carried away by hot air balloons"
+                />
               </div>
               <div className="col col-2">
                 <h2>Why GoGoPool?</h2>
@@ -134,65 +153,94 @@ export default function Home() {
           </div>
         </section>
         <section>
-        
-          <div className="content" style={{ textAlign: "center", padding: "5em 0" }}>
+          <div
+            className="content"
+            style={{ textAlign: "center", padding: "5em 0" }}
+          >
             <h2>A decentralized staking protocol</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
               ullamcorper nunc in enim.
             </p>
-            <div className="grid grid-3" style={{ marginTop: '1em' }}>
+            <div className="grid grid-3" style={{ marginTop: "1em" }}>
               <div className="grid__card">
-                <img src="images/badge-1.png" alt="badge illustration" style={{ maxWidth: '200px' }} />
+                <img
+                  src="images/badge-1.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
                 <h3>Decentralized hardware pools</h3>
               </div>
               <div className="grid__card">
-                <img src="images/badge-2.png" alt="badge illustration" style={{ maxWidth: '200px' }} />
+                <img
+                  src="images/badge-2.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
                 <h3>Liquid staking</h3>
               </div>
               <div className="grid__card">
-                <img src="images/badge-3.png" alt="badge illustration" style={{ maxWidth: '200px' }}/>
+                <img
+                  src="images/badge-3.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
                 <h3>Subnet compatibility</h3>
               </div>
             </div>
           </div>
         </section>
         <section className="section--blue section--blue__bottom-angle">
-        <Parallax speed={-20}>
-        <img
-          className="cloud cloud-2"
-          src="images/cloud-2.svg"
-          alt="illustration of cloud"
-        />
-      </Parallax>
-      <Parallax speed={-10}>
-      <img
-        className="cloud cloud-1"
-        src="images/cloud-1.svg"
-        alt="illustration of cloud"
-      />
-    </Parallax>
-        <div className="content" style={{ textAlign: "center", padding: "5em 0" }}>
-        <h2>Meet the team with the dream</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-          ullamcorper nunc in enim.
-        </p>
-        <div className="grid grid-3" style={{ marginTop: '1em' }}>
-          <div className="grid__card">
-            <img src="images/badge-1.png" alt="badge illustration" style={{ maxWidth: '200px' }} />
-            <h3>Decentralized hardware pools</h3>
+          <Parallax speed={-20}>
+            <img
+              className="cloud cloud-2"
+              src="images/cloud-2.svg"
+              alt="illustration of cloud"
+            />
+          </Parallax>
+          <Parallax speed={-10}>
+            <img
+              className="cloud cloud-1"
+              src="images/cloud-1.svg"
+              alt="illustration of cloud"
+            />
+          </Parallax>
+          <div
+            className="content"
+            style={{ textAlign: "center", padding: "5em 0" }}
+          >
+            <h2>Meet the team with the dream</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper nunc in enim.
+            </p>
+            <div className="grid grid-3" style={{ marginTop: "1em" }}>
+              <div className="grid__card">
+                <img
+                  src="images/badge-1.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
+                <h3>Decentralized hardware pools</h3>
+              </div>
+              <div className="grid__card">
+                <img
+                  src="images/badge-2.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
+                <h3>Liquid staking</h3>
+              </div>
+              <div className="grid__card">
+                <img
+                  src="images/badge-3.png"
+                  alt="badge illustration"
+                  style={{ maxWidth: "200px" }}
+                />
+                <h3>Subnet compatibility</h3>
+              </div>
+            </div>
           </div>
-          <div className="grid__card">
-            <img src="images/badge-2.png" alt="badge illustration" style={{ maxWidth: '200px' }} />
-            <h3>Liquid staking</h3>
-          </div>
-          <div className="grid__card">
-            <img src="images/badge-3.png" alt="badge illustration" style={{ maxWidth: '200px' }}/>
-            <h3>Subnet compatibility</h3>
-          </div>
-        </div>
-      </div>
         </section>
 
         <p className="description">
