@@ -4,6 +4,7 @@ import Nav from "../components/nav";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 import MtnFlagAnim from "../components/animations/flag";
+import ChimneyCoinsAnim from "../components/animations/chimney-coins";
 
 export default function Home() {
   return (
@@ -70,10 +71,7 @@ export default function Home() {
           <div className="content">
             <div className="columns">
               <div className="col col-1">
-                <img
-                  src="images/aval-coins.svg"
-                  alt="illustration of coins coming out of chimneys with Avalanche Crypto Logo in the center"
-                />
+                <ChimneyCoinsAnim/>
               </div>
               <div className="col col-2">
                 <h3>Our Vision</h3>
